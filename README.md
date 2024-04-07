@@ -3,6 +3,10 @@
 
 ## Getting Started
 
+## Problem Statement
+
+The problem we are addressing is the lack of personalized educational resources and support for university students. Existing platforms often offer generic content without considering individual learning needs.
+
 To run the Backend server, follow these simple steps in your terminal:
 
 ```bash
