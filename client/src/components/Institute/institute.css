@@ -1,0 +1,50 @@
+/* .insi_wrapper{
+    display: flex;
+} */
+
+.insti_form{
+    height: 98vh;
+    background-color: var(--dark);
+    width: 80%;
+    position: fixed;
+    top: 0%;
+    margin-left: 19.5%;
+    overflow-y: scroll;
+
+    padding-left:20%;
+    padding-right:20%;
+}
+
+.insti_form input{
+    outline: none;
+    padding: 2%;
+    font-size: large;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    background-color: var(--light);
+    margin-bottom: 6%;
+    margin-top: 6%;
+    color: white;
+}
+
+.uploadC{
+    text-align: center;
+    margin-top: 2%;
+}
+
+.insti_form button{
+    width: 30%;
+    height: 5vh;
+    background-color: var(--material);
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+

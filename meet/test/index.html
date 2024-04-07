@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speech Recognition Example</title>
+</head>
+<body>
+  <h1>Speech Recognition Example</h1>
+  <p id="transcript"></p>
+
+  <script>
+    window.onload = () => {
+      const recognition = new webkitSpeechRecognition(); // Create a new SpeechRecognition object
+
+      recognition.continuous = true; // Enable continuous speech recognition
+      recognition.interimResults = true; // Enable interim results
+
+      recognition.onresult = (event) => { // Event listener for speech recognition results
+        const transcript = Array.from(event.results)
+          .map(result => result[0].transcript)
+          .join(' ');
+
+        document.getElementById('transcript').textContent = transcript;
+      };
+
+      recognition.onerror = (event) => { // Event listener for speech recognition errors
+        console.error('Speech recognition error:', event.error);
+      };
+
+      recognition.start(); // Start speech recognition
+    };
+  </script>
+</body>
+</html>

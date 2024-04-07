@@ -1,0 +1,29 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --dark: #14152a;
+    --light: #2f3046;
+    --material: #3a3fc5;
+    --text: #cccfd7;
+    --red: #a15250;
+    --green: #3f604d;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--light);
+    color: white;
+    font-family: 'Open Sans';
+    overflow: hidden;
+ 
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
